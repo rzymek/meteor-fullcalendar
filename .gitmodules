@@ -1,0 +1,3 @@
+[submodule "fullcalendar"]
+	path = fullcalendar
+	url = https://github.com/arshaw/fullcalendar.git

@@ -1,16 +1,17 @@
 Package.describe({
-  summary: " \* Fill me in! *\ ",
-  version: "1.0.0",
-  git: " \* Fill me in! *\ "
+  summary: "Full-sized drag & drop event calendar (jQuery plugin)",
+  version: "2.1.1",
+  git: "https://github.com/rzymek/meteor-fullcalendar.git"
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.2.2');
-  api.addFiles('rzymek:fullcalendar.js');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('rzymek:fullcalendar');
-  api.addFiles('rzymek:fullcalendar-tests.js');
+  api.use('jquery-ui', 'client');
+  api.use('mrt:moment', 'client');
+  api.addFiles([
+      'fullcalendar/dist/fullcalendar.js',
+      'fullcalendar/dist/fullcalendar.css',
+      'fullcalendar/dist/lang-all.js',
+      'fullcalendar/dist/gcal.js',
+  ],'client');
 });
