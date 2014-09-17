@@ -6,8 +6,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.2.2');
-  api.use('jquery-ui', 'client');
-  api.use('mrt:moment', 'client');
+  api.use('mrt:jquery-ui@1.9.2', 'client');
+  api.use('mrt:moment@2.8.1', 'client');
   api.addFiles([
       'fullcalendar/dist/fullcalendar.js',
       'fullcalendar/dist/fullcalendar.css',
