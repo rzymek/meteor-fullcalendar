@@ -42,15 +42,11 @@
     ],
     [
       "minimongo",
-      "1.0.4"
+      "1.0.5"
     ],
     [
       "mrt:jquery-ui",
       "1.9.2"
-    ],
-    [
-      "mrt:moment",
-      "2.8.1"
     ],
     [
       "observe-sequence",
@@ -67,6 +63,10 @@
     [
       "reactive-var",
       "1.0.3"
+    ],
+    [
+      "rzymek:moment",
+      "2.8.3_10"
     ],
     [
       "templating",
