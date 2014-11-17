@@ -1,4 +1,5 @@
 Package.describe({
+  name: 'rzymek:fullcalendar',
   summary: "Full-sized drag & drop event calendar (jQuery plugin)",
   version: "2.2.0",
   git: "https://github.com/rzymek/meteor-fullcalendar.git"
