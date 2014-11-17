@@ -12,7 +12,7 @@ Options to FullCalendar can be passed as attributes:
 
     {{> fullcalendar defaultView='agendaWeek'}}
     
-If you want to have options defines in JS (or have them reactive), you can do:
+If you want to have options defined in JS (or have them reactive), you can do:
 
     <template name="example">
         {{>fullcalendar options}}
