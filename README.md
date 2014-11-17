@@ -1,4 +1,4 @@
-[Fullcalendar 2.1.1](http://fullcalendar.io/) JQuery plugin packaged for Meteor 0.9.  
+[FullCalendar](http://fullcalendar.io/) JQuery plugin packaged for Meteor 1.0
 
 ### Instalation ###
 
