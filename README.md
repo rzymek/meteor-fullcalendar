@@ -5,16 +5,23 @@
     meteor add rzymek:fullcalendar
 
 ### Usage ###
-Template:
 
-    <template name="myTemplate">
-        <div class="calendar"></div>
-    </template>
+    {{> fullcalendar }}
+
+Options to FullCalendar can be passed as attributes:
+
+    {{> fullcalendar defaultView='agendaWeek'}}
     
-Client JS:
+If you want to have options defines in JS (or have them reactive), you can do:
 
-    Template.myTemplate.rendered = function() {
-        this.$('.calendar').fullCalendar({
-            // put your fullcalendar options and callbacks here
-        });
-    }
+    <template name="example">
+        {{>fullcalendar options}}
+    </template>
+
+    Template.example.helpers({
+        options: function() {
+            return {
+                defaultView: 'basicWeek'
+            };
+        }
+    });
