@@ -1,3 +1,4 @@
 Template.fullcalendar.rendered = function() {
-    this.$(this.firstNode).fullCalendar(this);
+    console.log(this.data);
+    this.$(this.firstNode).fullCalendar(this.data);
 };
