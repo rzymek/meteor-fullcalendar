@@ -37,7 +37,7 @@ To update to a specific version do
 
     ./update.sh 2.2.6
 
-If you want me to publish a new package version just [create an issue](issues/new).
+If you want me to publish a new package version just [create an issue](https://github.com/rzymek/meteor-fullcalendar/issues/new).
 In case you can't wait to use a new fullcalendar version in your project, you can update the package locally:
 
     cd your_meteor_project
