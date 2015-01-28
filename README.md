@@ -45,3 +45,6 @@ In case you can't wait to use a new fullcalendar version in your project, you ca
     git clone https://github.com/rzymek/meteor-fullcalendar packages/rzymek:fullcalendar
     ./packages/rzymek:fullcalendar/update.sh
 
+After the desired version gets published just remove the local package:
+
+    rm -r packages/rzymek:fullcalendar
