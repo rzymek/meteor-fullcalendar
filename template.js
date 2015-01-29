@@ -1,3 +1,8 @@
 Template.fullcalendar.rendered = function() {
-    this.$(this.firstNode).fullCalendar(this.data);
+    var div = this.$(this.firstNode);
+    //jquery takes care of undefined values, no need to check here
+    div.attr('id',this.data.id);
+    div.addClass(this.data.class);
+    console.log(div[0]);
+    div.fullCalendar(this.data);
 };
