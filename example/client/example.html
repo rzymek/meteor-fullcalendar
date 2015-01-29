@@ -1,4 +1,5 @@
 <body>
-  {{> fullcalendar id="myid1" class="myClass1" defaultView='agendaWeek'}}
-  {{> fullcalendar options}}
+    <button class="refresh">Refresh</button>
+    {{> fullcalendar class="myCalendars" defaultView='month' height=300 events=cal1Events}}
+    {{> fullcalendar options}}
 </body>
