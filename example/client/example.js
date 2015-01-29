@@ -1,8 +1,8 @@
-Template.example.helpers({
+Template.body.helpers({
     options: function() {
-        return {		
-            id: 'exampleId',
-            class: 'exampleClass exampleClass2',
+        return {
+            id: 'myid2',
+            class: 'myClass2',
             lang: 'pl',
             defaultView: 'basicWeek'
         };
