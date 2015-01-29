@@ -26,6 +26,13 @@ If you want to have options defined in JS (or have them reactive), you can do:
         }
     });
 
+To access the `.fullcalendar` method assign an `id` or a `class` first
+
+    {{> fullcalendar id="myCalendar" ...}}
+
+Then you can for example do
+
+    $('#myCalendar').fullCalendar('refetchEvents');
 
 ### Updating fullcalendar ###
 
