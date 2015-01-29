@@ -1,6 +1,8 @@
 Template.example.helpers({
     options: function() {
-        return {
+        return {		
+            id: 'exampleId',
+            class: 'exampleClass',
             lang: 'pl',
             defaultView: 'basicWeek'
         };
