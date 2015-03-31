@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e 
-cd "`dirname $0`/fullcalendar"
 git submodule init
-git submodule update
+git submodule update --remote
+cd "`dirname $0`/fullcalendar"
 if [[ -z "$1" ]];then
   VER=`git tag | tail -n1 | sed 's/^v//'`
 else
