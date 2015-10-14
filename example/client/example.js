@@ -3,7 +3,7 @@ Template.body.helpers({
         var fc = $('.fc');
         return function (start, end, tz, callback) {
             //subscribe only to specified date range
-            Meteor.subscribe('events', start, end, function () {
+            Meteor.subscribe('events', start.toDate(), end.toDate(), function () {
                 //trigger event rendering when collection is downloaded
                 fc.fullCalendar('refetchEvents');
             });
@@ -31,26 +31,16 @@ Template.body.rendered = function () {
 };
 
 Template.body.events({
-    'click .refresh': function (e, template) {
-        //template.$('#myid2').fullCalendar('refetchEvents');
-        template.$('.myCalendars').fullCalendar('refetchEvents');
+    'click .addEvent': function () {
+        Events.insert({
+            date: new Date()
+        })
+    },
+    'click .removeEvent':function() {
+        var event = Events.findOne();
+        if(event) {
+            Events.remove(event._id);
+        }
     }
 });
 
-Template.body.helpers({
-    options: function () {
-        return {
-            id: 'myid2',
-            class: 'myCalendars',
-            lang: 'pl',
-            height: 300,
-            defaultView: 'basicWeek',
-            events: function (start, end, tz, callback) {
-                callback([{
-                        title: new Date().toGMTString(),
-                        start: new Date()
-                    }]);
-            }
-        };
-    }
-});

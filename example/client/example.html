@@ -1,7 +1,5 @@
 <body>
-    <button class="refresh">Refresh</button>
-    {{> fullcalendar class="myCalendars" defaultView='month' height="100%" events=events}}
-    <!--
-    {{> fullcalendar options}}
-    -->
+    <button class="addEvent">Add Event</button>
+    <button class="removeEvent">Remove Event</button>
+    {{> fullcalendar class="mainCalendar" defaultView='month' height="100%" events=events}}
 </body>
