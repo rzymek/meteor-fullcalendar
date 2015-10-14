@@ -1,5 +1,11 @@
 <body>
     <button class="addEvent">Add Event</button>
     <button class="removeEvent">Remove Event</button>
-    {{> fullcalendar class="mainCalendar" defaultView='month' height="100%" events=events}}
+    {{> fullcalendar
+        class="mainCalendar"
+        defaultView='month'
+        height="100%"
+        events=events
+        eventClick=onEventClicked
+    }}
 </body>
