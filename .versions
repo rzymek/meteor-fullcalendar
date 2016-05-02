@@ -23,7 +23,7 @@ observe-sequence@1.0.7
 promise@0.5.1
 random@1.0.5
 reactive-var@1.0.6
-rzymek:fullcalendar@2.5.0
+rzymek:fullcalendar@2.6.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 templating@1.1.5
