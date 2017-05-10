@@ -1,7 +1,7 @@
 Package.describe({
     name: 'rzymek:fullcalendar',
     summary: "Full-sized drag & drop event calendar (jQuery plugin)",
-    version: "2.7.2",
+    version: "3.4.0",
     git: "https://github.com/rzymek/meteor-fullcalendar.git"
 });
 
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
     api.addFiles([
         'fullcalendar/dist/fullcalendar.js',
         'fullcalendar/dist/fullcalendar.css',
-        'fullcalendar/dist/lang-all.js',
+        'fullcalendar/dist/locale-all.js',
         'fullcalendar/dist/gcal.js',
         'template.html',
         'template.js'
