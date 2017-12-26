@@ -1,3 +1,5 @@
+window.moment = moment;
+
 Template.fullcalendar.rendered = function() {
     var div = this.$(this.firstNode);
     if(this.data != null) {
